@@ -9,7 +9,7 @@ gem 'state_machine', "~> 0.10.2"
 # Include everything needed to run rake, tests, features, etc.
 group :development, :test do
   gem 'pg'
-  gem "ruby-debug"
+  # gem 'ruby-debug19', :require => 'ruby-debug'
   gem "watchr"
   gem "sqlite3"
   gem "factory_girl"
@@ -18,5 +18,6 @@ group :development, :test do
   gem "rspec-rails"
   gem "bundler"
   gem "jeweler"
-  gem "rcov", ">= 0"
+  gem 'simplecov', :require => false
+  gem 'simplecov-rcov', :require => false
 end
